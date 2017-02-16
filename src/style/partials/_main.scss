@@ -1,0 +1,41 @@
+main{
+	background-color: $whiteBg;
+}
+
+.title{
+	margin: 60px 0 35px;
+	font: $RoboL-38;
+	color: $grayText;
+	text-align: center;
+
+	&__line{
+		display: block;
+		height: 0;
+		border-top: $blueLine;
+		width: 290px;
+		margin: 0 auto;
+	}
+}
+
+.advantages{
+	font-size: 0;
+
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		width: 33.333333333333336%
+	}
+
+	&__title{
+		margin: 20px 0 25px;
+		font: $RoboR-20;
+		color: $grayText;
+		text-align: center;
+	}
+
+	&__text{
+		font: $RoboL-18;
+		color: $grayText;
+		text-align: center;
+	}
+}
