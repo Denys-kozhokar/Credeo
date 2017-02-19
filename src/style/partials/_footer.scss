@@ -1,0 +1,85 @@
+footer{
+	background-color: $footerBg;
+	padding-top: 29px;
+	position: relative;
+}
+
+.footer-menu{
+	display: inline-block;
+	width: 70%;
+	margin-bottom: 31px;
+
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 5%;
+
+		&--thin{
+			margin-right: 6.2%;
+		}
+
+		&--5th{
+			margin-right: 6.1%;
+		}		
+	}
+
+	&__link{
+		font: $RoboL-16;
+	 	color: $whiteText;
+	 	display: inline-block;
+	 	padding: 7px 0 4px;
+		border-bottom: $transparent;
+
+	 	&:hover{
+			border-bottom: $blueBorder;
+			transition: 0.3s;
+		}
+
+		&--last{
+			padding: 0 24px 0 14px;
+		}
+	}
+	
+	.contacts{
+		float:right;
+		width: 130px;
+
+		&__email{
+			float:right;
+			margin: 5px 5px 0 0;
+			font: $RoboTh-16;
+			color: $whiteText;
+		}
+
+		&__tel{
+			margin: 8px 0 0 0;
+			font: $RoboTh-16;
+			color: $whiteText;
+		}
+	}
+}
+
+
+.copyright{
+	padding: 31px 0 49px;
+	font: $RoboTh-12;
+	color: $whiteText;
+	border-top: $grayBorder2;
+	letter-spacing: -.02px;
+}
+
+.transition--footer{
+	top: -33px;
+	background-color: $footerBg;
+	width: 60px;
+	height: 60px;
+	margin-left: -32px;
+
+	.pointer{
+		margin: 13px 14px;
+	}
+}
+
+.pointer--up{
+	@include sprite($pointer-up);
+}

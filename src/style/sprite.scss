@@ -1,136 +1,209 @@
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-$arrow-left-hover-name: 'arrow-left-hover';
-$arrow-left-hover-x: 260px;
-$arrow-left-hover-y: 0px;
-$arrow-left-hover-offset-x: -260px;
-$arrow-left-hover-offset-y: 0px;
-$arrow-left-hover-width: 30px;
-$arrow-left-hover-height: 56px;
-$arrow-left-hover-total-width: 290px;
-$arrow-left-hover-total-height: 254px;
-$arrow-left-hover-image: '../img/sprite.png';
-$arrow-left-hover: (260px, 0px, -260px, 0px, 30px, 56px, 290px, 254px, '../img/sprite.png', 'arrow-left-hover', );
-$arrow-left-name: 'arrow-left';
-$arrow-left-x: 260px;
-$arrow-left-y: 61px;
-$arrow-left-offset-x: -260px;
-$arrow-left-offset-y: -61px;
-$arrow-left-width: 30px;
-$arrow-left-height: 56px;
-$arrow-left-total-width: 290px;
-$arrow-left-total-height: 254px;
-$arrow-left-image: '../img/sprite.png';
-$arrow-left: (260px, 61px, -260px, -61px, 30px, 56px, 290px, 254px, '../img/sprite.png', 'arrow-left', );
-$arrow-right-hover-name: 'arrow-right-hover';
-$arrow-right-hover-x: 260px;
-$arrow-right-hover-y: 122px;
-$arrow-right-hover-offset-x: -260px;
-$arrow-right-hover-offset-y: -122px;
-$arrow-right-hover-width: 30px;
-$arrow-right-hover-height: 56px;
-$arrow-right-hover-total-width: 290px;
-$arrow-right-hover-total-height: 254px;
-$arrow-right-hover-image: '../img/sprite.png';
-$arrow-right-hover: (260px, 122px, -260px, -122px, 30px, 56px, 290px, 254px, '../img/sprite.png', 'arrow-right-hover', );
-$arrow-right-name: 'arrow-right';
-$arrow-right-x: 260px;
-$arrow-right-y: 183px;
-$arrow-right-offset-x: -260px;
-$arrow-right-offset-y: -183px;
-$arrow-right-width: 30px;
-$arrow-right-height: 56px;
-$arrow-right-total-width: 290px;
-$arrow-right-total-height: 254px;
-$arrow-right-image: '../img/sprite.png';
-$arrow-right: (260px, 183px, -260px, -183px, 30px, 56px, 290px, 254px, '../img/sprite.png', 'arrow-right', );
-$partner-1-name: 'partner-1';
-$partner-1-x: 128px;
-$partner-1-y: 131px;
-$partner-1-offset-x: -128px;
-$partner-1-offset-y: -131px;
-$partner-1-width: 122px;
-$partner-1-height: 122px;
-$partner-1-total-width: 290px;
-$partner-1-total-height: 254px;
-$partner-1-image: '../img/sprite.png';
-$partner-1: (128px, 131px, -128px, -131px, 122px, 122px, 290px, 254px, '../img/sprite.png', 'partner-1', );
-$partner-2-name: 'partner-2';
-$partner-2-x: 131px;
-$partner-2-y: 0px;
-$partner-2-offset-x: -131px;
-$partner-2-offset-y: 0px;
-$partner-2-width: 124px;
-$partner-2-height: 124px;
-$partner-2-total-width: 290px;
-$partner-2-total-height: 254px;
-$partner-2-image: '../img/sprite.png';
-$partner-2: (131px, 0px, -131px, 0px, 124px, 124px, 290px, 254px, '../img/sprite.png', 'partner-2', );
-$partner-3-name: 'partner-3';
-$partner-3-x: 0px;
-$partner-3-y: 131px;
-$partner-3-offset-x: 0px;
-$partner-3-offset-y: -131px;
-$partner-3-width: 123px;
-$partner-3-height: 123px;
-$partner-3-total-width: 290px;
-$partner-3-total-height: 254px;
-$partner-3-image: '../img/sprite.png';
-$partner-3: (0px, 131px, 0px, -131px, 123px, 123px, 290px, 254px, '../img/sprite.png', 'partner-3', );
-$partner-4-name: 'partner-4';
-$partner-4-x: 0px;
-$partner-4-y: 0px;
-$partner-4-offset-x: 0px;
-$partner-4-offset-y: 0px;
-$partner-4-width: 126px;
-$partner-4-height: 126px;
-$partner-4-total-width: 290px;
-$partner-4-total-height: 254px;
-$partner-4-image: '../img/sprite.png';
-$partner-4: (0px, 0px, 0px, 0px, 126px, 126px, 290px, 254px, '../img/sprite.png', 'partner-4', );
-$spritesheet-width: 290px;
-$spritesheet-height: 254px;
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$calendar-name: 'calendar';
+$calendar-x: 349px;
+$calendar-y: 0px;
+$calendar-offset-x: -349px;
+$calendar-offset-y: 0px;
+$calendar-width: 68px;
+$calendar-height: 68px;
+$calendar-total-width: 417px;
+$calendar-total-height: 297px;
+$calendar-image: '../img/sprite.png';
+$calendar: (349px, 0px, -349px, 0px, 68px, 68px, 417px, 297px, '../img/sprite.png', 'calendar', );
+$cred-card-name: 'cred-card';
+$cred-card-x: 177px;
+$cred-card-y: 166px;
+$cred-card-offset-x: -177px;
+$cred-card-offset-y: -166px;
+$cred-card-width: 88px;
+$cred-card-height: 60px;
+$cred-card-total-width: 417px;
+$cred-card-total-height: 297px;
+$cred-card-image: '../img/sprite.png';
+$cred-card: (177px, 166px, -177px, -166px, 88px, 60px, 417px, 297px, '../img/sprite.png', 'cred-card', );
+$decrease-name: 'decrease';
+$decrease-x: 109px;
+$decrease-y: 0px;
+$decrease-offset-x: -109px;
+$decrease-offset-y: 0px;
+$decrease-width: 83px;
+$decrease-height: 161px;
+$decrease-total-width: 417px;
+$decrease-total-height: 297px;
+$decrease-image: '../img/sprite.png';
+$decrease: (109px, 0px, -109px, 0px, 83px, 161px, 417px, 297px, '../img/sprite.png', 'decrease', );
+$hands-name: 'hands';
+$hands-x: 197px;
+$hands-y: 46px;
+$hands-offset-x: -197px;
+$hands-offset-y: -46px;
+$hands-width: 90px;
+$hands-height: 62px;
+$hands-total-width: 417px;
+$hands-total-height: 297px;
+$hands-image: '../img/sprite.png';
+$hands: (197px, 46px, -197px, -46px, 90px, 62px, 417px, 297px, '../img/sprite.png', 'hands', );
+$increase-name: 'increase';
+$increase-x: 0px;
+$increase-y: 0px;
+$increase-offset-x: 0px;
+$increase-offset-y: 0px;
+$increase-width: 104px;
+$increase-height: 161px;
+$increase-total-width: 417px;
+$increase-total-height: 297px;
+$increase-image: '../img/sprite.png';
+$increase: (0px, 0px, 0px, 0px, 104px, 161px, 417px, 297px, '../img/sprite.png', 'increase', );
+$logo-name: 'logo';
+$logo-x: 197px;
+$logo-y: 0px;
+$logo-offset-x: -197px;
+$logo-offset-y: 0px;
+$logo-width: 147px;
+$logo-height: 41px;
+$logo-total-width: 417px;
+$logo-total-height: 297px;
+$logo-image: '../img/sprite.png';
+$logo: (197px, 0px, -197px, 0px, 147px, 41px, 417px, 297px, '../img/sprite.png', 'logo', );
+$pen-list-name: 'pen-list';
+$pen-list-x: 0px;
+$pen-list-y: 166px;
+$pen-list-offset-x: 0px;
+$pen-list-offset-y: -166px;
+$pen-list-width: 78px;
+$pen-list-height: 69px;
+$pen-list-total-width: 417px;
+$pen-list-total-height: 297px;
+$pen-list-image: '../img/sprite.png';
+$pen-list: (0px, 166px, 0px, -166px, 78px, 69px, 417px, 297px, '../img/sprite.png', 'pen-list', );
+$plus-name: 'plus';
+$plus-x: 386px;
+$plus-y: 122px;
+$plus-offset-x: -386px;
+$plus-offset-y: -122px;
+$plus-width: 21px;
+$plus-height: 21px;
+$plus-total-width: 417px;
+$plus-total-height: 297px;
+$plus-image: '../img/sprite.png';
+$plus: (386px, 122px, -386px, -122px, 21px, 21px, 417px, 297px, '../img/sprite.png', 'plus', );
+$pointer-down-name: 'pointer-down';
+$pointer-down-x: 349px;
+$pointer-down-y: 160px;
+$pointer-down-offset-x: -349px;
+$pointer-down-offset-y: -160px;
+$pointer-down-width: 32px;
+$pointer-down-height: 32px;
+$pointer-down-total-width: 417px;
+$pointer-down-total-height: 297px;
+$pointer-down-image: '../img/sprite.png';
+$pointer-down: (349px, 160px, -349px, -160px, 32px, 32px, 417px, 297px, '../img/sprite.png', 'pointer-down', );
+$pointer-up-name: 'pointer-up';
+$pointer-up-x: 349px;
+$pointer-up-y: 122px;
+$pointer-up-offset-x: -349px;
+$pointer-up-offset-y: -122px;
+$pointer-up-width: 32px;
+$pointer-up-height: 33px;
+$pointer-up-total-width: 417px;
+$pointer-up-total-height: 297px;
+$pointer-up-image: '../img/sprite.png';
+$pointer-up: (349px, 122px, -349px, -122px, 32px, 33px, 417px, 297px, '../img/sprite.png', 'pointer-up', );
+$procent-name: 'procent';
+$procent-x: 83px;
+$procent-y: 166px;
+$procent-offset-x: -83px;
+$procent-offset-y: -166px;
+$procent-width: 89px;
+$procent-height: 60px;
+$procent-total-width: 417px;
+$procent-total-height: 297px;
+$procent-image: '../img/sprite.png';
+$procent: (83px, 166px, -83px, -166px, 89px, 60px, 417px, 297px, '../img/sprite.png', 'procent', );
+$ruble-name: 'ruble';
+$ruble-x: 398px;
+$ruble-y: 73px;
+$ruble-offset-x: -398px;
+$ruble-offset-y: -73px;
+$ruble-width: 19px;
+$ruble-height: 26px;
+$ruble-total-width: 417px;
+$ruble-total-height: 297px;
+$ruble-image: '../img/sprite.png';
+$ruble: (398px, 73px, -398px, -73px, 19px, 26px, 417px, 297px, '../img/sprite.png', 'ruble', );
+$small-calendar-name: 'small-calendar';
+$small-calendar-x: 349px;
+$small-calendar-y: 73px;
+$small-calendar-offset-x: -349px;
+$small-calendar-offset-y: -73px;
+$small-calendar-width: 44px;
+$small-calendar-height: 44px;
+$small-calendar-total-width: 417px;
+$small-calendar-total-height: 297px;
+$small-calendar-image: '../img/sprite.png';
+$small-calendar: (349px, 73px, -349px, -73px, 44px, 44px, 417px, 297px, '../img/sprite.png', 'small-calendar', );
+$small-plus-name: 'small-plus';
+$small-plus-x: 386px;
+$small-plus-y: 160px;
+$small-plus-offset-x: -386px;
+$small-plus-offset-y: -160px;
+$small-plus-width: 17px;
+$small-plus-height: 16px;
+$small-plus-total-width: 417px;
+$small-plus-total-height: 297px;
+$small-plus-image: '../img/sprite.png';
+$small-plus: (386px, 160px, -386px, -160px, 17px, 16px, 417px, 297px, '../img/sprite.png', 'small-plus', );
+$time-name: 'time';
+$time-x: 0px;
+$time-y: 240px;
+$time-offset-x: 0px;
+$time-offset-y: -240px;
+$time-width: 91px;
+$time-height: 57px;
+$time-total-width: 417px;
+$time-total-height: 297px;
+$time-image: '../img/sprite.png';
+$time: (0px, 240px, 0px, -240px, 91px, 57px, 417px, 297px, '../img/sprite.png', 'time', );
+$spritesheet-width: 417px;
+$spritesheet-height: 297px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($arrow-left-hover, $arrow-left, $arrow-right-hover, $arrow-right, $partner-1, $partner-2, $partner-3, $partner-4, );
-$spritesheet: (290px, 254px, '../img/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($calendar, $cred-card, $decrease, $hands, $increase, $logo, $pen-list, $plus, $pointer-down, $pointer-up, $procent, $ruble, $small-calendar, $small-plus, $time, );
+$spritesheet: (417px, 297px, '../img/sprite.png', $spritesheet-sprites, );
 
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
 @mixin sprite-width($sprite) {
   width: nth($sprite, 5);
 }
@@ -157,12 +230,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   @include sprite-height($sprite);
 }
 
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
 @mixin sprites($sprites) {
   @each $sprite in $sprites {
     $sprite-name: nth($sprite, 10);

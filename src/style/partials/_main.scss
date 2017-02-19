@@ -1,19 +1,23 @@
 main{
 	background-color: $whiteBg;
+	padding-bottom: 122px;
 }
 
 .title{
-	margin: 60px 0 35px;
+	margin: 77px 0 25px 10px;
 	font: $RoboL-38;
 	color: $grayText;
+	text-transform: uppercase;
 	text-align: center;
 
 	&__line{
 		display: block;
 		height: 0;
 		border-top: $blueLine;
-		width: 290px;
+		width: 289px;
 		margin: 0 auto;
+		position: relative;
+		left:-13px;
 	}
 }
 
@@ -23,19 +27,383 @@ main{
 	&__item{
 		display: inline-block;
 		vertical-align: top;
-		width: 33.333333333333336%
+		width: 33.333333333333336%;
+		padding: 0 5% 0 0%;
+
+		&--card{
+			padding: 0 2% 0 3%;
+		}
+
+		&--right{
+			padding: 0 0 0 4%;
+		}
+
+		&--pen{
+			padding: 0 8% 0 0;
+		}
+
+		&--calendar{
+			padding: 0 3% 0 3%;
+		}
 	}
 
 	&__title{
-		margin: 20px 0 25px;
+		margin: 0 0 20px;
 		font: $RoboR-20;
 		color: $grayText;
 		text-align: center;
+
+		&--low{
+			margin: 0 0 22px;
+		}
 	}
 
 	&__text{
 		font: $RoboL-18;
 		color: $grayText;
 		text-align: center;
+		line-height: 22px;
 	}
+
+	&__picture{
+		display: block;
+		
+
+		&--hands{
+			@include sprite($hands);
+			margin: 71px auto 37px;
+			position: relative;
+			left: 4px;
+		}
+
+		&--credit-card{
+			@include sprite($cred-card);
+			margin: 71px auto 39px;
+			position: relative;
+			left: -11px;
+		}
+
+		&--procent{
+			@include sprite($procent);
+			margin: 71px auto 38px;
+		}
+
+		&--pen-list{
+			@include sprite($pen-list);
+			margin: 57px auto 34px;
+		}
+
+		&--calendar{
+			@include sprite($calendar);
+			margin: 57px auto 34px;
+		}
+
+		&--time{
+			@include sprite($time);
+			margin: 61px auto 41px;
+		}
+	}
+}
+
+.credit-rating{
+	font-size: 0;
+
+	.title{
+		margin: 111px 0 22px 8px;
+	}
+}
+.rating{
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	font: $RoboL-18;
+	color: $grayText;
+	margin: 38px 0 0;
+	padding-left: 4px;
+
+	&__text{
+		line-height: 22px;
+	}
+
+}
+
+.ratinginfo{
+	margin-top: 18px;
+	
+	&__item{
+		margin-top: 16px;
+	}
+
+	&__text{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 23px;
+		width: 90%;
+	}
+}
+
+.diagram{
+	display: inline-block;
+	width: 50%;
+	margin-top: 45px;
+	font: $RoboL-16;
+	color: $blueText2;
+	text-align: center;
+	padding-left: 11%;
+
+	&__title{
+		margin-bottom: 39px;
+		display: inline-block;
+	}
+
+	&__img{
+		position: relative;
+
+		img{
+			width: 100%;
+		}
+
+		&:before{
+			display: inline-block;
+			content: "Ставка, %";
+			position: absolute;
+			top: 38%;
+			left: 42.5%;
+			font: $RoboL-16;
+			color: $blueText2;
+		}
+	}
+}
+
+.plus--small{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 6px;
+	@include sprite($small-plus);
+}
+
+.service-section{
+	font-size: 0;
+
+	.title{
+		margin: 88px 0 20px 8px;
+	}
+}
+
+.service{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin: 34px 0 0;
+
+	&__info{
+		display: inline-block;
+		vertical-align: top;
+		width: 73%;
+		margin: 0 0 0 20px;
+	}
+
+	&__title{
+		margin: 17px 0 0;
+		font: $RoboL-24;
+		color: $blueText2;
+		text-transform: uppercase;
+	}
+
+	&__text{
+		font: $RoboL-18;
+		color: $grayText;
+		margin-top: 16px;
+	}
+
+	&__img{
+		display: inline-block;
+		vertical-align: bottom;
+		width: 40%;
+	}
+
+	.decrease{
+		@include sprite($decrease);
+		position: relative;
+		top: -8px;
+	}
+
+	.increase{
+		@include sprite($increase);
+		position: relative;
+		top: 11px;
+	}
+
+	&--right{
+		margin: 33px 0 0;
+
+		.service__info{
+			width: 75%;
+			margin: 0 16px 0 4px;
+		}
+	}
+}
+
+.howItWork{
+	font-size: 0;
+
+	.title{
+		margin: 110px 0 20px 8px;
+	}
+	
+	&__info{
+		display: inline-block;
+		vertical-align: top;
+		width: 49%;
+		margin: 89px 0 0 0;
+
+		&--2nd{
+			margin: 49px 0 0 0;
+		}
+	}
+
+	&__img{
+		display: inline-block;
+		width: 51%;
+		margin: 80px 0 0 0;
+
+		&--2nd{
+			margin: 33px 0 0 0;
+			padding-left: 7.5%;
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+
+	&__text{
+		font: $RoboL-18;
+		color: $grayText;
+		margin: 20px 0 25px 37px;
+
+		&--second{
+			margin: 20px 10px 25px 37px;
+		}
+
+		&--3rd{
+			margin: 21px 35px 24px 0;			
+		}
+
+		&--4th{
+			margin: 21px 47px 23px 0;			
+		}
+	}
+}
+
+.repayment{
+	font-size: 0;
+	background-color: $grayBg;
+	padding: 40px 0 33px;
+	margin: 106px 0 0;
+
+	.title{
+		margin: 4px 0 19px 0;
+	}
+
+	&__block{
+		margin: 53px 0 36px;
+	}
+
+	.question{
+		display: inline-block;
+		vertical-align: top;
+		width: 27%;
+
+		&--2nd{
+			width: 36%;
+		}
+
+		&--3rd{
+			width: 33%;
+		}
+
+		&__line{
+			width: 1px;
+			height: 115px;
+			display: inline-block;
+			background-color: $lineBg;
+			-ms-transform: rotate(30deg); /* IE 9 */
+		    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+		    transform: rotate(30deg);
+		}
+
+		&__text{
+			font: $RoboL-24;
+			color: $darkText;
+			text-transform: uppercase;
+			display: inline-block;
+			vertical-align: top;
+			margin: 25px 20% 0 20%;
+
+			&--2nd{
+				margin: 25px 5% 0 7%;				
+			}
+
+			&--3rd{
+				margin: 25px 0 0 1%;				
+			}
+		}
+	}
+
+	&__info{
+		font: $RoboL-18;
+		color: $grayText;
+		margin: 0 0 23px 3.3%;
+	}
+
+	&__way{
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		padding: 0 0 23px 3.3%;
+
+		.wayinfo{
+			display: inline-block;
+			vertical-align: top;
+			font: $RoboL-18;
+			color: $grayText;
+			width: 75%;
+			margin: 0 0 0 5.5%;
+		}
+
+		&--2nd{
+			padding: 0 0 25px 6%;
+
+			.wayinfo{
+				margin: 0 0 0 6.5%;
+			}
+		}
+
+		.plus--small{
+			top: 3px;
+		}
+	}
+
+	&__ps{
+		padding: 26px 0 0 3.3%;
+		border-top: $psLine;
+
+		.ps-info{
+			display: inline-block;
+			vertical-align: top;
+			font: $RoboL-18;
+			color: $grayText;
+			margin-left: 2.7%;
+			width: 90%;
+		}
+	}
+
+	.small-calendar{
+		display: inline-block;
+		@include sprite($small-calendar);
+	}
+
+
 }

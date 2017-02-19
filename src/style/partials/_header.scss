@@ -5,55 +5,111 @@
 .navigation{
 	display: inline-block;
 	vertical-align: top;
-	&--close{
+	position: relative;
+
+	.hamburger{
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 11px;
+
+		&__line{
+			height: 4px;
+			background-color: #FFF;
+			margin-bottom: 4px;
+
+			&--last{
+				margin-bottom: 0;
+			}
+		}
+
+		&__text{
+			font: $RoboL-12;
+		 	color: $whiteText;
+		 	text-transform: uppercase;
+		 	margin-top: -2px;
+		}
 	}
 }
 
 .menu{
-	display: inline-block;
-	font-size: 0;
-	
+	position: absolute;
+	background-color: $darkBg;
+	width: 200px;
 	&--close{
 		display: none;
 	}
 
 	&__item{
+	}
+	&__link{
+		font: $RoboL-16;
+	 	color: $whiteText;
+	 	display: inline-block;
+	 	width: 100%;
+	 	padding: 5px 15px;
+	 	border-bottom: $grayBorder;
+
+	 	&--last{
+	 		border-bottom: $transparent;
+	 	}
+
+	 	&:hover{
+			border-bottom: $blueBorder;
+			transition: 0.3s;
+		}
+	}
+}
+	/*horisontal menu*/
+.hor-menu{
+	display: inline-block;
+	float:right;	
+
+	&__item{
 		display: inline-block;
 		vertical-align: top;
-		padding: 4px 0 16px;
+		padding: 17px 0 16px;
 		border-bottom: $transparent;
 
 	 	&:hover{
 			border-bottom: $blueBorder;
-			transition: all 0.3s linear 0s;
+			transition: 0.3s;
 		}
+
+		// &--active{
+		// 	border-bottom: $blueBorder;
+		// }
 	}
 
 	&__link{
 		font: $RoboL-18;
 	 	color: $whiteText;
 	 	letter-spacing: 0.1px;
-		padding: 0 18px;
+		padding: 0 19px 0 14px;
 		border-right: $grayBorder;
 
 		&--last{
-			padding: 0 24px 0 20px;
+			padding: 0 24px 0 14px;
 		}
-
-	}
+	}		
 }
 
 .logo{
 	display: inline-block;
 	vertical-align: top;
-	margin: 7px 63px 0 62px;
+	margin: 7px 0 4px 6.2%;
+
+	&__link{
+		display: inline-block;
+		@include sprite($logo);
+	}
 }
 
 .contacts__tel{
 	display: inline-block;
-	margin: 20px 0 0 17px; 
+	margin: 20px 0.7% 0 2.2%; 
 	font: $RoboL-16;
 	color: $blueText;
+	float: right;
 }
 
 .background{
@@ -86,14 +142,15 @@
 	}
 }
 
-.drop-part{
+.second-part{
 	background-color: $darkFilter;
 	font-size: 0;
+	position: relative;
 }
 
 .credit-form{
-	margin: 22px 4.8% 10px 0;
-	padding: 0 0 30px 15px;
+	margin: 22px 4.8% 11px 0;
+	padding: 0 0 33px 15px;
 	background-color: $whiteFilter;
 	display: inline-block;
 	vertical-align: top;
@@ -115,11 +172,22 @@
 	 	color: $whiteText;
 	 	border: $whiteBorder;
 	 	background-color: $transparentBg;
-
+	 	
 	 	&::-webkit-input-placeholder {color: $whiteText; letter-spacing: .5px;}
 		&::-moz-placeholder          {color: $whiteText; letter-spacing: .5px;}/* Firefox 19+ */
 		&:-moz-placeholder           {color: $whiteText; letter-spacing: .5px;}/* Firefox 18- */
 		&:-ms-input-placeholder      {color: $whiteText; letter-spacing: .5px;}
+	}
+
+	.input-holder{
+		position: relative;
+	}
+
+	.ruble{
+		@include sprite($ruble);
+		position: absolute;
+			top: -21px;
+			right: 21px;
 	}
 
 	&__term{
@@ -208,3 +276,26 @@
 	}
 }
 
+.plus{
+	display: inline-block;
+	@include sprite($plus);
+}
+
+.transition{
+	width: 70px;
+	height: 64px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -26px;
+	left: 50%;
+	margin-left: -35px;
+	background-color: $btnBg;
+
+	.pointer{
+		display: inline-block;
+		margin: 16px 19px;
+		&--down{
+			@include sprite($pointer-down);
+		}
+	}
+}

@@ -1,71 +1,84 @@
 <div class="top">
 	<div class="container">
-		<nav class="navigation navigation--close">
-			<span>menu</span>
+		<nav class="navigation">
+			<div class="hamburger">
+				<div class="hamburger__line"></div>
+				<div class="hamburger__line"></div>
+				<div class="hamburger__line hamburger__line--last"></div>	
+			<span class="hamburger__text">Меню</span>
+			</div>
 			<ul class="menu menu--close">
-				<li class="menu__item menu__item--active"><a href="#" class="menu__link">Получить деньги</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Вложить деньги</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Получить деньги</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Правила</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Онлайн консультант</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Вложить деньги</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				<li class="menu__item"><a href="#" class="menu__link menu__link--last">Вопросы и ответы</a></li>
 			</ul>
 		</nav>
 		<div class="logo">
-			<a href="#" class="logo__link"><img src="img/logo.png" alt="credeo"></a>
+			<a href="#" class="logo__link"></a>
 		</div>
-		<nav class="navigation">
-			<ul class="menu">
-				<li class="menu__item menu__item--active"><a href="#" class="menu__link">Получить деньги</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Вложить деньги</a></li>
-				<li class="menu__item"><a href="#" class="menu__link menu__link--last">Личный кабинет</a></li>
-			</ul>
-		</nav>
 		<a class="contacts__tel" href="tel:+88005553377">8 800 555-33-77</a>
+		<ul class="hor-menu">
+			<li class="hor-menu__item"><a href="#" class="hor-menu__link">Получить деньги</a></li>
+			<li class="hor-menu__item"><a href="#" class="hor-menu__link">Вложить деньги</a></li>
+			<li class="hor-menu__item"><a href="#" class="hor-menu__link hor-menu__link--last">Личный кабинет</a></li>
+		</ul>		
 	</div>
 </div>
 <div class="background">
-	<div class="container">
-		<div class="header_text">
-			<h1 class="header_text__title">Новое слово<br>в кредитовании</h1>
-			<p class="header_text__content">Получить деньги быстро и выгодно<br><span class="longer">с площадкой коллективного</span><br>кредитования кредео.</p>
-		</div>
+<div class="container">
+	<div class="header_text">
+		<h1 class="header_text__title">Новое слово<br>в кредитовании</h1>
+		<p class="header_text__content">Получить деньги быстро и выгодно<br><span class="longer">с площадкой коллективного</span><br>кредитования кредео.</p>
 	</div>
+</div>
 	
-	<div class="drop-part">
-		<div class="container">
-			<div class="credit-form">
-				<form action="#">
-					<span class="credit-form__title">Желаемая сумма:</span>
+<div class="second-part">
+	<div class="container">
+		<div class="credit-form">
+			<form action="#">
+				<span class="credit-form__title">Желаемая сумма:</span>
+				<span class="input-holder">
 					<input type="text" class="credit-form__amount" placeholder="25 000">
-					<div class="amount__line">
-						<div class="amount__marks">
-							<span class="amount__mark">15 000</span>
-							<span class="amount__mark amount__mark--middle">60 000</span>
-							<span class="amount__mark">200 000</span>
-						</div>
+					<div class="ruble"></div>
+				</span>
+				<div class="amount__line">
+					<div class="amount__marks">
+						<span class="amount__mark">15 000</span>
+						<span class="amount__mark amount__mark--middle">60 000</span>
+						<span class="amount__mark">200 000</span>
 					</div>
-					<div class="credit-form__term">
-						<span class="term">Срок: <span class="term--blue">12 месяцев</span></span>
-						<span class="term__text">Интервал платежей &mdash;<br>ежемесячно аннуитетными платежами</span>
-					</div>
-					<div class="money-time">
-						<span class="money-time__text">Деньги у вас на карте<br>уже в <span class="money-time__text--blue">10:28</span></span>
-					</div>
-					<button class="credit-form__btn">Получить деньги</button>
-				</form>
-			</div>
-			<div class="info">
-				<div class="info__item">
-					<span class="plus"><img src="img/plus.png" alt=""></span>
-					<span class="info__text">До 200 тысяч рублей<br>на вашу карту</span>
 				</div>
-				<div class="info__item info__item--middle">
-					<span class="plus"><img src="img/plus.png" alt=""></span>
-					<span class="info__text">100% онлайн, получите<br>деньги за 28 минут</span>
+				<div class="credit-form__term">
+					<span class="term">Срок: <span class="term--blue">12 месяцев</span></span>
+					<span class="term__text">Интервал платежей &mdash;<br>ежемесячно аннуитетными платежами</span>
 				</div>
-				<div class="info__item">
-					<span class="plus"><img src="img/plus.png" alt=""></span>
-					<span class="info__text">Без посредников<br>и лишних затрат</span>
+				<div class="money-time">
+					<span class="money-time__text">Деньги у вас на карте<br>уже в <span class="money-time__text--blue">10:28</span></span>
 				</div>
-			</div>
+				<button class="credit-form__btn">Получить деньги</button>
+			</form>
 		</div>
+		<ul class="info">
+			<li class="info__item">
+				<span class="plus"></span>
+				<span class="info__text">До 200 тысяч рублей<br>на вашу карту</span>
+			</li>
+			<li class="info__item info__item--middle">
+				<span class="plus"></span>
+				<span class="info__text">100% онлайн, получите<br>деньги за 28 минут</span>
+			</li>
+			<li class="info__item">
+				<span class="plus"></span>
+				<span class="info__text">Без посредников<br>и лишних затрат</span>
+			</li>
+		</ul>
+		<a href="#anchor" class="transition">
+			<div class="pointer pointer--down"></div>
+		</a>
 	</div>
+</div>
 </div>

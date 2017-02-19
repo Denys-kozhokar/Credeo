@@ -2,10 +2,13 @@
 // $bordRadius: 20px;
 
 //fonts
+$RoboTh-12: 100 12px 'Roboto', sans-serif;
+$RoboTh-16: 100 16px 'Roboto', sans-serif;
 $RoboTh-24: 100 24px 'Roboto', sans-serif;
 $RoboTh-30: 100 30px 'Roboto', sans-serif;
 $RoboTh-41: 100 41px 'Roboto', sans-serif;
 
+$RoboL-12: 300 12px 'Roboto', sans-serif;
 $RoboL-16: 300 16px 'Roboto', sans-serif;
 $RoboL-18: 300 18px 'Roboto', sans-serif;
 $RoboL-24: 300 24px 'Roboto', sans-serif;
@@ -22,20 +25,17 @@ $whiteText: #fff;
 $blueText: #019fc6;
 $blueText2: #00a8d1;
 $grayText: #666666;
-// $darkText: #333333;
-// $redText: #ff4e50;
-// $darkgrayText: #666666;
-// $inpText: #999999;
+$darkText: #000;
 
 
 //border
 $whiteBorder: 1px solid #fff;
-// $transparent-border: 2px solid rgba(0,0,0,0);
-// $red-border: 2px solid #ff4e50;
 $grayBorder: 1px solid #6d6d6d;
+$grayBorder2: 1px solid #999492;
 $blueBorder: 1px solid #00cdff;
 $transparent: 1px solid rgba(0,0,0,0);
 $blueLine: 1px solid #00a8d1;
+$psLine: 1px solid #d5dde9;
 
 // $footer-border: 4px solid #ff4e50;
 
@@ -46,3 +46,7 @@ $whiteFilter: rgba(255,255,255,.3);
 $transparentBg: rgba(0,0,0,0);
 $blueBg: #00a8d1;
 $whiteBg: #fff;
+$grayBg: #f7f7f7;
+$footerBg: #595451;
+$btnBg: #40332c;
+$lineBg: #bfbfbf;
