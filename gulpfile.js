@@ -96,16 +96,16 @@ gulp.task('sprite:build', function() {
     spriteData.css.pipe(gulp.dest('./src/style/'));
 });
 
-gulp.task('fonts:build', function() {
-    gulp.src(path.src.fonts)
-        .pipe(gulp.dest(path.build.fonts))
-});
+// gulp.task('fonts:build', function() {
+//     gulp.src(path.src.fonts)
+//         .pipe(gulp.dest(path.build.fonts))
+// });
 
 gulp.task('build', [
     'html:build',
     'js:build',
     'style:build',
-    'fonts:build',
+    // 'fonts:build',
     'sprite:build',
     'image:build'
 ]);
@@ -124,9 +124,9 @@ gulp.task('watch', function(){
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
     });
-    watch([path.watch.fonts], function(event, cb) {
-        gulp.start('fonts:build');
-    });
+    // watch([path.watch.fonts], function(event, cb) {
+    //     gulp.start('fonts:build');
+    // });
 });
 
 

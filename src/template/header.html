@@ -39,13 +39,14 @@
 <div class="second-part">
 	<div class="container">
 		<div class="credit-form">
-			<form action="#">
+			<form action="#" onsubmit="return false">
 				<span class="credit-form__title">Желаемая сумма:</span>
 				<span class="input-holder">
-					<input type="text" class="credit-form__amount" placeholder="25 000">
+					<input type="text" class="credit-form__amount" placeholder="25 000" id="slider-value">
 					<div class="ruble"></div>
 				</span>
 				<div class="amount__line">
+					<div id="slider-range"></div>
 					<div class="amount__marks">
 						<span class="amount__mark">15 000</span>
 						<span class="amount__mark amount__mark--middle">60 000</span>

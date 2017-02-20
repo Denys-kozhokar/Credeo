@@ -39,26 +39,37 @@ footer{
 			padding: 0 24px 0 14px;
 		}
 	}
-	
-	.contacts{
+}
+
+.contacts{
+	float:right;
+	width: 130px;
+
+	&__email{
 		float:right;
-		width: 130px;
+		margin: 5px 5px 0 0;
+		font: $RoboTh-16;
+		color: $whiteText;
+	}
 
-		&__email{
-			float:right;
-			margin: 5px 5px 0 0;
-			font: $RoboTh-16;
-			color: $whiteText;
+	&__tel--footer{
+		margin: 8px 0 0 0;
+		font: $RoboTh-16;
+		color: $whiteText;
+
+		@include respond-to(mobile) {
+		    display: block;
 		}
+	}
 
-		&__tel{
-			margin: 8px 0 0 0;
-			font: $RoboTh-16;
-			color: $whiteText;
+	.hidden{
+		display: none;
+
+		@include respond-to(mobile) {
+		    display: block;
 		}
 	}
 }
-
 
 .copyright{
 	padding: 31px 0 49px;

@@ -7,10 +7,6 @@ a {
 	text-decoration: none;
 }
 
-.container{
-	max-width: 994px;
-	margin: 0 auto;
-}
 
 @import "partials/reset.scss";
 
@@ -18,9 +14,9 @@ a {
 
 @import "_var.scss";
 
-@import "font.scss";
-
 @import "sprite.scss";
+
+@import "nouislider.scss";
 
 @import "partials/_header.scss";
 

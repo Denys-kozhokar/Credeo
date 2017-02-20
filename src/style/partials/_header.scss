@@ -1,3 +1,12 @@
+.container{
+	max-width: 994px;
+	margin: 0 auto;
+
+	@include respond-to(tablet) {
+	    padding: 0 10px;
+	}
+}
+
 .top{
 	background-color: $darkBg;
 }
@@ -29,18 +38,20 @@
 		 	margin-top: -2px;
 		}
 	}
+		 	@include respond-to(mobile) {
+			    margin-bottom: 5px;
+			}
 }
 
 .menu{
 	position: absolute;
 	background-color: $darkBg;
 	width: 200px;
+	
 	&--close{
 		display: none;
 	}
 
-	&__item{
-	}
 	&__link{
 		font: $RoboL-16;
 	 	color: $whiteText;
@@ -90,6 +101,10 @@
 		&--last{
 			padding: 0 24px 0 14px;
 		}
+	}
+
+	@include respond-to(tablet) {
+	    display: none;
 	}		
 }
 
@@ -102,6 +117,10 @@
 		display: inline-block;
 		@include sprite($logo);
 	}
+
+	@include respond-to(mobile) {
+	    float: right;
+	}
 }
 
 .contacts__tel{
@@ -110,6 +129,10 @@
 	font: $RoboL-16;
 	color: $blueText;
 	float: right;
+
+	@include respond-to(mobile) {
+	    display: none;
+	}
 }
 
 .background{
@@ -127,6 +150,10 @@
 		font: $RoboTh-41;
 	 	color: $whiteText;
 	 	text-transform: uppercase;
+
+	 	@include respond-to(mobile) {
+			font: $RoboTh-30;
+		}
 	}
 
 	&__content{
@@ -139,6 +166,13 @@
 	 	.longer{
 	 		letter-spacing: .05px;
 	 	}
+
+	 	@include respond-to(tablet) {
+			font: $RoboTh-24;
+		}
+		@include respond-to(mobile) {
+		    font: $RoboL-16;
+		}
 	}
 }
 
@@ -156,12 +190,22 @@
 	vertical-align: top;
 	width: 50.3%;
 
+	@include respond-to(tablet) {
+		width: 100%;
+	}
+
 	&__title{
 		display: inline-block;
-		margin: 32px 5.5% 94px 0;
+		margin: 32px 5.5% 61px 0;
 		font: $RoboL-24;
 	 	color: $whiteText;
 	 	text-transform: uppercase;
+
+	 	@include respond-to(mobile) {
+			margin-bottom: 20px;
+			margin-left: 10%;
+			text-align: center;
+		}
 	}
 
 	&__amount{
@@ -172,6 +216,11 @@
 	 	color: $whiteText;
 	 	border: $whiteBorder;
 	 	background-color: $transparentBg;
+
+	 	@include respond-to(mobile) {
+			width: 80%;
+			margin: 0 10% 40px;
+		}
 	 	
 	 	&::-webkit-input-placeholder {color: $whiteText; letter-spacing: .5px;}
 		&::-moz-placeholder          {color: $whiteText; letter-spacing: .5px;}/* Firefox 19+ */
@@ -186,16 +235,29 @@
 	.ruble{
 		@include sprite($ruble);
 		position: absolute;
-			top: -21px;
-			right: 21px;
+		top: -21px;
+		right: 21px;
+
+		@include respond-to(mobile) {
+			right: 15%;
+		}
 	}
 
 	&__term{
 		margin: 29px 0 31px;
+
+		@include respond-to(mobile) {
+			margin: 20px 0 20px;
+		}
+
 		.term{
 			font: $RoboL-16;
 	 		color: $whiteText;
 	 		margin-right: 8%;
+
+	 		@include respond-to(mobile) {
+				margin: 20px 10% 20px;
+			}
 
 	 		&--blue{
 	 			font: $RoboM-16;
@@ -208,22 +270,103 @@
 	 			font: $RoboL-16;
 	 			color: $whiteText;
 	 			line-height: 18px;
+
+	 			@include respond-to(mobile) {
+					margin: 10px 10%;
+				}
 	 		}
 		}
 	}
 
 	&__btn{
-		padding: 9px 9.5%  9px 7.5%;
+		padding: 9px 9.5% 9px 7.5%;
 		border-radius: 30px;
 		border: none;
 		background-color: $blueBg;
 		font: $RoboL-24;
 	 	color: $whiteText;
+
+	 	@include respond-to(mobile) {
+			margin-left: 10%;
+			font: $RoboL-18;
+		}
 	}
 
 	.amount__line{
 		display: inline-block;
+		padding-right: 23px;
 		width: 100%;
+
+		@include respond-to(mobile) {
+			display: none;
+		}
+
+		.noUi-target {
+		    border: none;
+		    border-radius: none;
+		    box-shadow: none;
+
+			background: #9f9f9f; /* Old browsers */
+			background: -moz-linear-gradient(left,  #9f9f9f 50%, #d7d7d7 50%, #d7d7d7 50%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  #9f9f9f 50%,#d7d7d7 50%,#d7d7d7 50%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  #9f9f9f 50%,#d7d7d7 50%,#d7d7d7 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f9f9f', endColorstr='#d7d7d7',GradientType=0 ); /* IE6-9 */
+			
+			&:before{
+			    	content:' ';
+			    	display: inline-block;
+			    	position: absolute;
+			    	border-radius: 50%;
+			    	width: 12px;
+				    height: 12px;
+				    left: 50%;
+				    top: -3px;
+				    margin-left: -6px;
+			    	background: $blueBg;
+			    }
+
+		}
+
+		.noUi-horizontal {
+		    height: 4px;
+		    margin-bottom: 29px;
+		
+		    .noUi-handle {
+			    width: 22px;
+			    height: 22px;
+			    left: -7px;
+			    top: -8px;
+			    border: none;
+			    border-radius: 50%;
+			    background: $blueBg;
+			    cursor: default;
+			    box-shadow: none;
+
+			    &:before{
+			    	content:' ';
+			    	display: inline-block;
+			    	border: $blueLine;
+			    	border-radius: 50%;
+			    	width: 40px;
+				    height: 40px;
+				    position: absolute;
+				    left: -9px;
+				    top: -9px;
+			    	background:none;
+			    }
+
+			    &:after{
+			    	display: none;
+			    }
+			}
+		}
+
+		.noUi-connect {
+		    background: $blueBg;
+		    box-shadow: none;
+		    // -webkit-transition: background 450ms;
+		    // transition: background 450ms;
+		}
 	}
 
 	.amount__mark{
@@ -231,7 +374,7 @@
 		color: $whiteText;
 		
 		&--middle{
-			margin: 0 29.5% 0 33%;
+			margin: 0 31.5% 0 34.5%;
 		}
 	}
 
@@ -240,9 +383,17 @@
 		vertical-align: top;
 		margin-right: 6%;
 
+		@include respond-to(mobile) {
+			margin: 0 10% 30px;
+		}	
+
 		&__text{
 			font: $RoboL-16;
 			color: $whiteText;
+
+			@include respond-to(mobile) {
+				margin-top: 10px;
+			}
 
 			&--blue{
 		 		font: $RoboR-16;
@@ -255,11 +406,31 @@
 .info{
 	display: inline-block;
 	width: 40%;
-
 	margin-top: 73px;
+
+	@include respond-to(tablet) {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	@include respond-to(mobile) {
+		width: 100%;
+		margin-left: 10%;
+		margin-bottom: 40px;
+	}
 
 	&__item{
 		margin-bottom: 41px;
+
+		@include respond-to(tablet) {
+			width: 33%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		@include respond-to(mobile) {
+			width: 100%;
+			margin-bottom: 20px;
+		}
 
 		&--middle{
 			margin-bottom: 45px;
@@ -273,6 +444,12 @@
 	 	display: inline-block;
 	 	vertical-align: top;
 	 	margin-left: 8.5%;
+
+	 	@include respond-to(tablet) {
+		 	margin-left: 8.5%;
+		 	font: $RoboL-16;
+		 	width: 70%;
+		}
 	}
 }
 
