@@ -68,7 +68,7 @@ main{
 		color: $grayText;
 		text-align: center;
 
-		@include respond-to(mobile) {
+		@include respond-to(tablet) {
 			font: $RoboR-16;
 		}
 
@@ -83,7 +83,7 @@ main{
 		text-align: center;
 		line-height: 22px;
 
-		@include respond-to(mobile) {
+		@include respond-to(tablet) {
 			font: $RoboL-16;
 		}
 	}
@@ -144,6 +144,16 @@ main{
 	margin: 38px 0 0;
 	padding-left: 4px;
 
+	@include respond-to(tablet) {
+		width: 90%;
+		display: block;
+		margin: 38px auto 0;
+	}
+
+	@include respond-to(mobile) {
+		width: 100%;
+	}
+
 	&__text{
 		line-height: 22px;
 	}
@@ -162,6 +172,11 @@ main{
 		vertical-align: top;
 		margin-left: 23px;
 		width: 90%;
+
+		@include respond-to(mobile) {
+			width: 85%;
+			margin-left: 13px;
+		}
 	}
 }
 
@@ -173,6 +188,17 @@ main{
 	color: $blueText2;
 	text-align: center;
 	padding-left: 11%;
+
+	@include respond-to(tablet) {
+		width: 70%;
+		display: block;
+		margin: 45px auto 0;
+		padding-left: 0;
+	}
+
+	@include respond-to(mobile) {
+		width: 90%;
+	}
 
 	&__title{
 		margin-bottom: 39px;
@@ -220,11 +246,26 @@ main{
 	width: 50%;
 	margin: 34px 0 0;
 
+	@include respond-to(tablet) {
+		width: 100%;
+	}
+
+	
+
 	&__info{
 		display: inline-block;
 		vertical-align: top;
 		width: 73%;
 		margin: 0 0 0 20px;
+
+		@include respond-to(tablet) {
+			width: 80%;
+			margin: 0;
+		}
+
+		@include respond-to(mobile) {
+			width: 65%;
+		}
 	}
 
 	&__title{
@@ -238,24 +279,44 @@ main{
 		font: $RoboL-18;
 		color: $grayText;
 		margin-top: 16px;
+
+		@include respond-to(tablet) {
+			font: $RoboL-16;
+		}
 	}
 
 	&__img{
 		display: inline-block;
 		vertical-align: bottom;
-		width: 40%;
 	}
 
 	.decrease{
 		@include sprite($decrease);
 		position: relative;
 		top: -8px;
+
+		@include respond-to(tablet) {
+			float: right;
+		}
+
+		@include respond-to(mobile) {
+			margin-top: 60px;
+		}
 	}
 
 	.increase{
 		@include sprite($increase);
-		position: relative;
-		top: 11px;
+		margin: 58px 0 0 0;
+		float: right;
+
+		@include respond-to(tablet) {
+			float: right;
+			margin-top: 10px;
+		}
+
+		@include respond-to(mobile) {
+			margin-top: 60px;
+		}
 	}
 
 	&--right{
@@ -263,7 +324,12 @@ main{
 
 		.service__info{
 			width: 75%;
-			margin: 0 16px 0 4px;
+			margin: 0 0 0 4px;
+
+			@include respond-to(mobile) {
+				width: 60%;
+				margin: 0;
+			}
 		}
 	}
 }
@@ -281,8 +347,20 @@ main{
 		width: 49%;
 		margin: 89px 0 0 0;
 
+		@include respond-to(mobile) {
+			width: 90%;
+			display: block;
+			margin: 0 auto;
+		}
+
 		&--2nd{
 			margin: 49px 0 0 0;
+
+			@include respond-to(mobile) {
+				width: 90%;
+				display: block;
+				margin: 30px auto;
+			}
 		}
 	}
 
@@ -290,6 +368,12 @@ main{
 		display: inline-block;
 		width: 51%;
 		margin: 80px 0 0 0;
+
+		@include respond-to(mobile) {
+			width: 90%;
+			display: block;
+			margin: 30px auto;
+		}
 
 		&--2nd{
 			margin: 33px 0 0 0;
@@ -306,16 +390,32 @@ main{
 		color: $grayText;
 		margin: 20px 0 25px 37px;
 
+		@include respond-to(mobile) {
+				margin-left: 0;
+			}
+
 		&--second{
 			margin: 20px 10px 25px 37px;
+
+			@include respond-to(tablet) {
+				display: none;
+			}
 		}
 
 		&--3rd{
-			margin: 21px 35px 24px 0;			
+			margin: 21px 35px 24px 0;	
+
+			@include respond-to(mobile) {
+				margin-right: 0;
+			}		
 		}
 
 		&--4th{
-			margin: 21px 47px 23px 0;			
+			margin: 21px 47px 23px 0;
+
+			@include respond-to(tablet) {
+				display: none;
+			}			
 		}
 	}
 }
@@ -332,6 +432,10 @@ main{
 
 	&__block{
 		margin: 53px 0 36px;
+
+		@include respond-to(mobile) {
+			margin-top: 20px;
+		}
 	}
 
 	.question{
@@ -339,12 +443,43 @@ main{
 		vertical-align: top;
 		width: 27%;
 
+		@include respond-to(tablet) {
+			width: 30%;
+		}
+
+		@include respond-to(mobile) {
+			width: 80%;
+			display: block;
+			margin: 0 auto 20px;
+			text-align: center;
+		}	
+
 		&--2nd{
 			width: 36%;
+
+			@include respond-to(tablet) {
+				width: 41%;
+			}
+			@include respond-to(mobile) {
+				width: 80%;
+				display: block;
+				margin: 0 auto 20px;
+				text-align: center;
+			}	
 		}
 
 		&--3rd{
 			width: 33%;
+
+			@include respond-to(tablet) {
+				width: 29%;
+			}
+			@include respond-to(mobile) {
+				width: 80%;
+				display: block;
+				margin: 0 auto 20px;
+				text-align: center;
+			}	
 		}
 
 		&__line{
@@ -355,6 +490,13 @@ main{
 			-ms-transform: rotate(30deg); /* IE 9 */
 		    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
 		    transform: rotate(30deg);
+
+		    @include respond-to(tablet) {
+				height: 90px;
+			}
+			@include respond-to(mobile) {
+				display: none;
+			}
 		}
 
 		&__text{
@@ -364,6 +506,10 @@ main{
 			display: inline-block;
 			vertical-align: top;
 			margin: 25px 20% 0 20%;
+
+			@include respond-to(tablet) {
+				font: $RoboL-18;
+			}
 
 			&--2nd{
 				margin: 25px 5% 0 7%;				
@@ -394,6 +540,10 @@ main{
 			color: $grayText;
 			width: 75%;
 			margin: 0 0 0 5.5%;
+
+			@include respond-to(mobile) {
+				font: $RoboL-12;				
+			}	
 		}
 
 		&--2nd{
@@ -420,6 +570,11 @@ main{
 			color: $grayText;
 			margin-left: 2.7%;
 			width: 90%;
+
+			@include respond-to(tablet) {
+				font: $RoboL-16;
+				width: 80%;				
+			}
 		}
 	}
 

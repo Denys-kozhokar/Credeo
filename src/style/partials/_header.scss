@@ -192,6 +192,7 @@
 
 	@include respond-to(tablet) {
 		width: 100%;
+		margin-right: 0;
 	}
 
 	&__title{
@@ -364,8 +365,6 @@
 		.noUi-connect {
 		    background: $blueBg;
 		    box-shadow: none;
-		    // -webkit-transition: background 450ms;
-		    // transition: background 450ms;
 		}
 	}
 
@@ -374,7 +373,16 @@
 		color: $whiteText;
 		
 		&--middle{
-			margin: 0 31.5% 0 34.5%;
+			margin: 0 0 0 34.5%;
+
+			@include respond-to(mobile) {
+				margin-left: 38%;
+			}
+		}
+
+		&--last{
+			float: right;
+			margin-right: 4px;
 		}
 	}
 
@@ -414,7 +422,7 @@
 	}
 
 	@include respond-to(mobile) {
-		width: 100%;
+		width: auto;
 		margin-left: 10%;
 		margin-bottom: 40px;
 	}

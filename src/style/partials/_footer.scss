@@ -9,17 +9,36 @@ footer{
 	width: 70%;
 	margin-bottom: 31px;
 
+	@include respond-to(mobile) {
+		width: 160px;
+		display: block;
+		margin: 0 auto 15px;			
+	}	
+
 	&__item{
 		display: inline-block;
 		vertical-align: top;
 		margin-right: 5%;
 
+		@include respond-to(mobile) {
+		    margin-right: 0;
+		    display: block;
+		}
+
 		&--thin{
 			margin-right: 6.2%;
+
+			@include respond-to(mobile) {
+			    margin-right: 0;
+			}
 		}
 
 		&--5th{
 			margin-right: 6.1%;
+
+			@include respond-to(mobile) {
+			    margin-right: 0;
+			}
 		}		
 	}
 
@@ -29,6 +48,10 @@ footer{
 	 	display: inline-block;
 	 	padding: 7px 0 4px;
 		border-bottom: $transparent;
+
+		@include respond-to(mobile) {
+		    text-align: center;
+		}
 
 	 	&:hover{
 			border-bottom: $blueBorder;
@@ -45,11 +68,21 @@ footer{
 	float:right;
 	width: 130px;
 
+	@include respond-to(mobile) {
+		float: none;
+		margin: 0 auto 25px;
+		width: 160px;				
+	}
+
 	&__email{
 		float:right;
 		margin: 5px 5px 0 0;
 		font: $RoboTh-16;
 		color: $whiteText;
+
+		@include respond-to(mobile) {
+		    float: none;
+		}
 	}
 
 	&__tel--footer{
@@ -59,6 +92,7 @@ footer{
 
 		@include respond-to(mobile) {
 		    display: block;
+		    float: none;
 		}
 	}
 

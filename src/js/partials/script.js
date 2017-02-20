@@ -1,5 +1,7 @@
-;var slider = document.getElementById('slider-range');
-var sliderValue = document.getElementById('slider-value');
+;var 	slider = document.getElementById('slider-range'),
+			sliderValue = document.getElementById('slider-value'),
+			hamburger = document.getElementById('hamburger'),
+			menu = document.getElementById('nav-menu');
 
 noUiSlider.create(slider, {
 	start: [ 25000 ],
@@ -20,3 +22,15 @@ slider.noUiSlider.on('update', function( values, handle ) {
 sliderValue.addEventListener('change', function(){
 	slider.noUiSlider.set(this.value);
 });
+
+
+
+hamburger.addEventListener('click', toggleMenu);
+
+function toggleMenu(){
+	if (menu.className == 'menu') {
+		menu.className = 'menu menu--close'
+	} else{
+		menu.className = 'menu';
+	}
+}
