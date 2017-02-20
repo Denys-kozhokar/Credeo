@@ -23,14 +23,16 @@ sliderValue.addEventListener('change', function(){
 	slider.noUiSlider.set(this.value);
 });
 
-
-
 hamburger.addEventListener('click', toggleMenu);
 
 function toggleMenu(){
 	if (menu.className == 'menu') {
-		menu.className = 'menu menu--close'
+		menu.className = 'menu menu--close';
+		hamburger.className = 'hamburger';
+
 	} else{
 		menu.className = 'menu';
+		hamburger.className = 'hamburger hamburger-active';
 	}
 }
+

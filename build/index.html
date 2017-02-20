@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Credeo</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic" rel="stylesheet">
+	<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/main.css">
 	
 	<!--[if lt IE 9]>
@@ -34,7 +35,7 @@
 					</ul>
 				</nav>
 				<div class="logo">
-					<a href="#" class="logo__link"></a>
+					<a href="#" class="logo__link" id="home"></a>
 				</div>
 				<a class="contacts__tel" href="tel:+88005553377">8 800 555-33-77</a>
 				<ul class="hor-menu">
@@ -104,7 +105,6 @@
 		<div class="container">
 			<section>
 				<h1 class="title" id="anchor">Наши преимущества</h1>
-				<span class="title__line"></span>
 				<ul class="advantages">
 					<li class="advantages__item">
 						<div class="advantages__picture advantages__picture--hands"></div>
@@ -140,7 +140,6 @@
 			</section>
 			<section class="credit-rating">
 				<h1 class="title">Ваш кредитный рейтинг</h1>
-				<span class="title__line"></span>
 				<div class="rating">
 					<p class="rating__text">Кредитный рейтинг это оценка, основанная на Вашей кредитной истории и персональных данных, обработанная в скоринговой системе. Оценка позволяет нам предложить Вам индивидуальные кредитные условия. Чем выше кредитный рейтинг, тем более привлекательные условия мы готовы предоставить.</p>
 					<ul class="ratinginfo">
@@ -167,7 +166,6 @@
 			</section>
 			<section class="service-section">
 				<h1 class="title">Сервис кредео</h1>
-				<span class="title__line"></span>
 				<div class="service">
 					<div class="service__img decrease"></div>
 					<div class="service__info">
@@ -186,7 +184,6 @@
 			</section>
 			<section class="howItWork">
 				<h1 class="title">Как это работает?</h1>
-				<span class="title__line"></span>
 				<div class="howItWork__img">
 					<img src="img/howItWork.jpg" alt="how it work">
 				</div>
@@ -204,15 +201,14 @@
 			</section>
 			<section class="repayment">
 				<h1 class="title">Погашение</h1>
-				<span class="title__line"></span>
 				<div class="repayment__block">
 					<a href="#" class="question">
 						<div class="question__text">Как<br>погасить?</div>
-						<div class="question__line"></div>
+						<!-- <div class="question__line"></div> -->
 					</a>
 					<a href="#" class="question question--2nd">
 						<div class="question__text question__text--2nd">Как уточнить и дату<br>сумму платежа</div>
-						<div class="question__line"></div>
+						<!-- <div class="question__line"></div> -->
 					</a>
 					<a href="#" class="question question--3rd">
 						<div class="question__text question__text--3rd">Досрочное погашение</div>
@@ -251,7 +247,7 @@
 				<a class="contacts__email" href="mailto:nfo@credeo.ru">nfo@credeo.ru</a>
 			</div>
 			<div class="copyright">Банковские услуги по выпуску и обслуживанию банковских картр Visa &nbsp;&#171;CREDEO&#187;&nbsp; оказывает компанией &#171;КРЕДЕО&#187;&nbsp; (ООО), ЩГРН 1127746337685.</div>
-			<a href="#anchor" class="transition transition--footer">
+			<a href="#home" class="transition transition--footer">
 				<div class="pointer pointer--up"></div>
 			</a>
 		</div>

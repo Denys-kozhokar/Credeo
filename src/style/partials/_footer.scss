@@ -80,6 +80,11 @@ footer{
 		font: $RoboTh-16;
 		color: $whiteText;
 
+		&:hover{
+			color: $blueText2;
+			transition: 0.5s;		
+		}
+
 		@include respond-to(mobile) {
 		    float: none;
 		}
@@ -89,6 +94,11 @@ footer{
 		margin: 8px 0 0 0;
 		font: $RoboTh-16;
 		color: $whiteText;
+
+		&:hover{
+			color: $blueText2;
+			transition: 0.5s;		
+		}
 
 		@include respond-to(mobile) {
 		    display: block;

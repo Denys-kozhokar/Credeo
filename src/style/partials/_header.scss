@@ -20,6 +20,7 @@
 		display: inline-block;
 		vertical-align: top;
 		margin-top: 11px;
+		cursor: pointer;
 
 		&__line{
 			height: 4px;
@@ -29,6 +30,7 @@
 			&--last{
 				margin-bottom: 0;
 			}
+
 		}
 
 		&__text{
@@ -36,6 +38,15 @@
 		 	color: $whiteText;
 		 	text-transform: uppercase;
 		 	margin-top: -2px;
+		}
+
+		&-active{
+			.hamburger__line{
+				background-color: $blueBg;
+			}
+			.hamburger__text{
+				color: $blueBg;
+			}
 		}
 	}
 		 	@include respond-to(mobile) {
@@ -78,7 +89,7 @@
 	&__item{
 		display: inline-block;
 		vertical-align: top;
-		padding: 17px 0 16px;
+		// padding: 0 19px 0 14px;
 		border-bottom: $transparent;
 
 	 	&:hover{
@@ -95,8 +106,10 @@
 		font: $RoboL-18;
 	 	color: $whiteText;
 	 	letter-spacing: 0.1px;
-		padding: 0 19px 0 14px;
+		line-height: 54px;
 		border-right: $grayBorder;
+		padding: 0 19px 0 14px;
+
 
 		&--last{
 			padding: 0 24px 0 14px;
@@ -129,6 +142,11 @@
 	font: $RoboL-16;
 	color: $blueText;
 	float: right;
+
+	&:hover{
+		color: $whiteText;
+		transition: 0.5s;		
+	}
 
 	@include respond-to(mobile) {
 	    display: none;
@@ -211,7 +229,7 @@
 
 	&__amount{
 	 	width: 42.5%;
-	 	padding: 6px 0 7px;
+	 	padding: 6px 8% 7px 5%;
 		text-align: center;
 		font: $RoboL-24;
 	 	color: $whiteText;
@@ -221,6 +239,7 @@
 	 	@include respond-to(mobile) {
 			width: 80%;
 			margin: 0 10% 40px;
+			padding-right:15%;
 		}
 	 	
 	 	&::-webkit-input-placeholder {color: $whiteText; letter-spacing: .5px;}
@@ -286,6 +305,12 @@
 		background-color: $blueBg;
 		font: $RoboL-24;
 	 	color: $whiteText;
+	 	cursor: pointer;
+
+	 	&:hover{
+			background-color: #019fc6;
+			// transition: 0.5s 0.1s;
+	 	}
 
 	 	@include respond-to(mobile) {
 			margin-left: 10%;
@@ -297,10 +322,6 @@
 		display: inline-block;
 		padding-right: 23px;
 		width: 100%;
-
-		@include respond-to(mobile) {
-			display: none;
-		}
 
 		.noUi-target {
 		    border: none;
@@ -331,6 +352,10 @@
 		.noUi-horizontal {
 		    height: 4px;
 		    margin-bottom: 29px;
+
+		    @include respond-to(mobile) {
+		    	margin-bottom: 15px;
+			   }
 		
 		    .noUi-handle {
 			    width: 22px;
@@ -371,12 +396,20 @@
 	.amount__mark{
 		font: $RoboL-16;
 		color: $whiteText;
+
+		@include respond-to(mobile) {
+			font: $RoboL-12;
+		}
 		
 		&--middle{
 			margin: 0 0 0 34.5%;
 
-			@include respond-to(mobile) {
+			@include respond-to(tablet) {
 				margin-left: 38%;
+			}
+
+			@include respond-to(mobile) {
+				margin-left: 33%;
 			}
 		}
 
